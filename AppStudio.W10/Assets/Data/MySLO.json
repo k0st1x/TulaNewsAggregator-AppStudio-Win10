@@ -1,0 +1,23 @@
+[
+  {
+    "MenuType": "Page",
+    "Title": "MySLO Лента",
+    "Icon": "/Assets/DataImages/myslo-76.png",
+    "Target": "MySLO1ListPage",
+    "_id": "f80c9518-2bc5-403f-9d9b-2ddfef1d3388"
+  },
+  {
+    "MenuType": "Page",
+    "Title": "MySLO Блоги",
+    "Icon": "/Assets/DataImages/myslo-76-2.png",
+    "Target": "MySLO2ListPage",
+    "_id": "a9c8d72f-2763-478f-9db3-b2cf6d21b342"
+  },
+  {
+    "MenuType": "Page",
+    "Title": "MySLO Город",
+    "Icon": "/Assets/DataImages/myslo-76-1.png",
+    "Target": "MySLO3ListPage",
+    "_id": "cfdf6d5d-717e-42b9-a03c-28a7e6b996bc"
+  }
+]
