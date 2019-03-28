@@ -1,2 +1,0 @@
-MainPackage=D:\Projects\TulaNewsAggregator-AppStudio-2\AppStudio.W10\bin\ARM\Release\AppStudio.W10_2.0.15.0_ARM.appx
-SymbolPackage=D:\Projects\TulaNewsAggregator-AppStudio-2\AppStudio.W10\AppPackages\AppStudio.W10_2.0.15.0_Test\AppStudio.W10_2.0.15.0_ARM.appxsym

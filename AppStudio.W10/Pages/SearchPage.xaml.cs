@@ -21,6 +21,7 @@ namespace AppStudio.Pages
             ViewModel = new SearchViewModel();
             this.InitializeComponent();
             Microsoft.HockeyApp.HockeyClient.Current.TrackEvent(this.GetType().FullName);
+            Microsoft.AppCenter.Analytics.Analytics.TrackEvent(this.GetType().FullName);
         }
         public SearchViewModel ViewModel { get; private set; }
 		protected async override void OnNavigatedTo(NavigationEventArgs e)
@@ -28,5 +29,5 @@ namespace AppStudio.Pages
             base.OnNavigatedTo(e);
             await ViewModel.SearchDataAsync(e.Parameter.ToString());
         }
-    }    
+    }
 }

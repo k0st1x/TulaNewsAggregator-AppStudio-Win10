@@ -22,7 +22,7 @@ namespace AppStudio.Sections
 		{
 			_dataProvider = new YouTubeDataProvider(new YouTubeOAuthTokens
 			{
-				ApiKey = "{youtube_app_secret}"
+				ApiKey = Vault.YouTube
 			});
 		}
 

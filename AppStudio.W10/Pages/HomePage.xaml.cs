@@ -26,14 +26,15 @@ namespace AppStudio.Pages
     {
         public HomePage()
         {
-            ViewModel = new MainViewModel(12);            
+            ViewModel = new MainViewModel(12);
             InitializeComponent();
             NavigationCacheMode = NavigationCacheMode.Required;
-			commandBar.DataContext = ViewModel;
-			searchBox.SearchCommand = SearchCommand;
-			this.SizeChanged += OnSizeChanged;
+            commandBar.DataContext = ViewModel;
+            searchBox.SearchCommand = SearchCommand;
+            this.SizeChanged += OnSizeChanged;
             Microsoft.HockeyApp.HockeyClient.Current.TrackEvent(this.GetType().FullName);
-        }		
+            Microsoft.AppCenter.Analytics.Analytics.TrackEvent(this.GetType().FullName);
+        }
         public MainViewModel ViewModel { get; set; }
 
         protected async override void OnNavigatedTo(NavigationEventArgs e)
@@ -56,7 +57,7 @@ namespace AppStudio.Pages
                 return new RelayCommand<string>(text =>
                 {
                     searchBox.Reset();
-                    ShellPage.Current.ShellControl.CloseLeftPane();                    
+                    ShellPage.Current.ShellControl.CloseLeftPane();
                     NavigationService.NavigateToPage("SearchPage", text, true);
                 },
                 SearchViewModel.CanSearch);

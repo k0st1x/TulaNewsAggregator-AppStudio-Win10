@@ -22,6 +22,7 @@ namespace AppStudio.Pages
 
             this.InitializeComponent();
             Microsoft.HockeyApp.HockeyClient.Current.TrackEvent(this.GetType().FullName);
+            Microsoft.AppCenter.Analytics.Analytics.TrackEvent(this.GetType().FullName);
         }
 
         public AboutThisAppViewModel AboutThisAppModel { get; private set; }

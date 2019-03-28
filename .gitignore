@@ -197,4 +197,5 @@ _TempNugets/
 
 # Visual Studio 6 workspace options file
 *.opt
-/src/AppStudio.Controls/project.lock.json
+AppStudio.W10/BundleArtifacts/
+AppStudio.W10/_pkginfo.txt

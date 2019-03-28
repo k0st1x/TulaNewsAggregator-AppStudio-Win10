@@ -31,9 +31,10 @@ namespace AppStudio.Pages
             this.InitializeComponent();
 			commandBar.DataContext = ViewModel;
             Microsoft.HockeyApp.HockeyClient.Current.TrackEvent(this.GetType().FullName);
+            Microsoft.AppCenter.Analytics.Analytics.TrackEvent(this.GetType().FullName);
         }
 
-        public DetailViewModel ViewModel { get; set; }        
+        public DetailViewModel ViewModel { get; set; }
 
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {

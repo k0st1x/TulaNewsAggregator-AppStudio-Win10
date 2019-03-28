@@ -10,7 +10,6 @@
 
 using System;
 using AppStudio.Pages;
-using Microsoft.HockeyApp;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
@@ -29,14 +28,18 @@ namespace AppStudio {
         /// </summary>
         public App()
         {
- 
-            Microsoft.HockeyApp.HockeyClient.Current.Configure("00000000-0000-0000-0000-000000000000");
+            Microsoft.HockeyApp.HockeyClientExtensionsUwp.Configure(Microsoft.HockeyApp.HockeyClient.Current, Vault.AppCenter);
+            //DevExpress.Logify.UWP.LogifyAlert.Instance.ApiKey = Vault.Logify;
+            //DevExpress.Logify.UWP.LogifyAlert.Instance.StartExceptionsHandling();
 
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            Microsoft.AppCenter.AppCenter.LogLevel = Microsoft.AppCenter.LogLevel.Verbose;
+            Microsoft.AppCenter.AppCenter.Start(Vault.AppCenter, typeof(Microsoft.AppCenter.Analytics.Analytics), typeof(Microsoft.AppCenter.Crashes.Crashes));
         }
 
-                /// <summary>
+        /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>

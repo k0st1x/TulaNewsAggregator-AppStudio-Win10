@@ -29,6 +29,7 @@ namespace AppStudio.Pages
 			commandBar.DataContext = ViewModel;
 			NavigationCacheMode = NavigationCacheMode.Enabled;
             Microsoft.HockeyApp.HockeyClient.Current.TrackEvent(this.GetType().FullName);
+            Microsoft.AppCenter.Analytics.Analytics.TrackEvent(this.GetType().FullName);
         }
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)
@@ -36,10 +37,10 @@ namespace AppStudio.Pages
 			ShellPage.Current.ShellControl.SelectItem("d9cd81b6-ae15-44f8-8d32-5d7594a5a01b");
 			ShellPage.Current.ShellControl.SetCommandBar(commandBar);
 			if (e.NavigationMode == NavigationMode.New)
-            {			
+            {
 				await this.ViewModel.LoadDataAsync();
                 this.ScrollToTop();
-			}			
+			}
             base.OnNavigatedTo(e);
         }
 

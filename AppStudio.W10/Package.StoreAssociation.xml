@@ -2,6 +2,7 @@
 <StoreAssociation xmlns="http://schemas.microsoft.com/appx/2010/storeassociation">
   <Publisher>CN=D3E079BC-3CEA-4469-88B6-0F4AB848729B</Publisher>
   <PublisherDisplayName>k0st1x</PublisherDisplayName>
+  <DeveloperAccountType>MSA</DeveloperAccountType>
   <GeneratePackageHash>http://www.w3.org/2001/04/xmlenc#sha256</GeneratePackageHash>
   <SupportedLocales>
     <Language Code="af" InMinimumRequirementSet="true" />
@@ -364,35 +365,22 @@
       <ReservedName>Агрегатор новостей Тулы</ReservedName>
     </ReservedNames>
   </ProductReservedInfo>
-  <AccountPackageIdentityNames>
-    <MainPackageIdentityName>29662k0st1x.juick8</MainPackageIdentityName>
-  </AccountPackageIdentityNames>
   <PackageInfoList LandingUrl="https://developer.microsoft.com/dashboard/Application?appId=9WZDNCRDXJ74">
     <BundleInfo>
       <PackageInfo>
-        <OsMinVersion>6.3.0.0</OsMinVersion>
+        <OsMinVersion>0.0.0.0</OsMinVersion>
         <PackageArchitecture>X86</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.1.13.0</PackageMaxArchitectureVersion>
+        <PackageMaxArchitectureVersion>2.0.15.0</PackageMaxArchitectureVersion>
       </PackageInfo>
       <PackageInfo>
-        <OsMinVersion>6.3.0.0</OsMinVersion>
+        <OsMinVersion>0.0.0.0</OsMinVersion>
         <PackageArchitecture>X64</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.1.13.0</PackageMaxArchitectureVersion>
+        <PackageMaxArchitectureVersion>2.0.15.0</PackageMaxArchitectureVersion>
       </PackageInfo>
       <PackageInfo>
-        <OsMinVersion>6.3.0.0</OsMinVersion>
+        <OsMinVersion>0.0.0.0</OsMinVersion>
         <PackageArchitecture>Arm</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.1.13.0</PackageMaxArchitectureVersion>
-      </PackageInfo>
-      <PackageInfo>
-        <OsMinVersion>6.3.0.0</OsMinVersion>
-        <PackageArchitecture>Neutral</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.1.13.0</PackageMaxArchitectureVersion>
-      </PackageInfo>
-      <PackageInfo>
-        <OsMinVersion>6.3.0.0</OsMinVersion>
-        <PackageArchitecture>Neutral</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.1.13.0</PackageMaxArchitectureVersion>
+        <PackageMaxArchitectureVersion>2.0.15.0</PackageMaxArchitectureVersion>
       </PackageInfo>
     </BundleInfo>
   </PackageInfoList>

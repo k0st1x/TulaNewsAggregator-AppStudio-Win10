@@ -16,14 +16,14 @@ namespace AppStudio.Sections
 {
     public class Section1Section : Section<FacebookSchema>
     {
-		private FacebookDataProvider _dataProvider;	
-			
+		private FacebookDataProvider _dataProvider;
+
 		public Section1Section()
 		{
 			_dataProvider = new FacebookDataProvider(new FacebookOAuthTokens
 			{
 				AppId = "1158179577528273",
-                AppSecret = "{facebook_app_secret}"
+                AppSecret = Vault.Facebook
 			});
 		}
 
