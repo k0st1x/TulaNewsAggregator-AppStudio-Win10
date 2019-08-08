@@ -32,7 +32,6 @@ namespace AppStudio.Pages
             commandBar.DataContext = ViewModel;
             searchBox.SearchCommand = SearchCommand;
             this.SizeChanged += OnSizeChanged;
-            Microsoft.HockeyApp.HockeyClient.Current.TrackEvent(this.GetType().FullName);
             Microsoft.AppCenter.Analytics.Analytics.TrackEvent(this.GetType().FullName);
         }
         public MainViewModel ViewModel { get; set; }

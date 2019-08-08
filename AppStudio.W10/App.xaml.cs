@@ -28,10 +28,6 @@ namespace AppStudio {
         /// </summary>
         public App()
         {
-            Microsoft.HockeyApp.HockeyClientExtensionsUwp.Configure(Microsoft.HockeyApp.HockeyClient.Current, Vault.AppCenter);
-            //DevExpress.Logify.UWP.LogifyAlert.Instance.ApiKey = Vault.Logify;
-            //DevExpress.Logify.UWP.LogifyAlert.Instance.StartExceptionsHandling();
-
             this.InitializeComponent();
             this.Suspending += OnSuspending;
 

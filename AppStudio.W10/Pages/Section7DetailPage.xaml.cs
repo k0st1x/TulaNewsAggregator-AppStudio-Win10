@@ -30,7 +30,6 @@ namespace AppStudio.Pages
 			this.ViewModel.ShowInfo = false;
             this.InitializeComponent();
 			commandBar.DataContext = ViewModel;
-            Microsoft.HockeyApp.HockeyClient.Current.TrackEvent(this.GetType().FullName);
             Microsoft.AppCenter.Analytics.Analytics.TrackEvent(this.GetType().FullName);
         }
 

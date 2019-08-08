@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="29662k0st1x.BlogoReader-forintuit" Publisher="CN=D3E079BC-3CEA-4469-88B6-0F4AB848729B" Version="2.0.16.0" />
+  <Identity Name="29662k0st1x.BlogoReader-forintuit" Publisher="CN=D3E079BC-3CEA-4469-88B6-0F4AB848729B" Version="2.0.17.0" />
   <mp:PhoneIdentity PhoneProductId="f0e0dfae-fcf7-4827-b2b7-f87cf37b2734" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Агрегатор новостей Тулы</DisplayName>

@@ -28,7 +28,6 @@ namespace AppStudio.Pages
             this.InitializeComponent();
 			commandBar.DataContext = ViewModel;
 			NavigationCacheMode = NavigationCacheMode.Enabled;
-            Microsoft.HockeyApp.HockeyClient.Current.TrackEvent(this.GetType().FullName);
             Microsoft.AppCenter.Analytics.Analytics.TrackEvent(this.GetType().FullName);
         }
 

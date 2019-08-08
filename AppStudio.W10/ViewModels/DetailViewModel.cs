@@ -261,7 +261,6 @@ namespace AppStudio.ViewModels
             }
             catch (Exception ex)
             {
-                Microsoft.HockeyApp.HockeyClient.Current.TrackEvent("Handled Exception: " + ex.Message);
                 Microsoft.AppCenter.Analytics.Analytics.TrackEvent("Handled Exception: " + ex.Message);
                 HasLoadDataErrors = true;
                 Debug.WriteLine(ex.ToString());

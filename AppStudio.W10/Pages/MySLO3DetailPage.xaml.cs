@@ -29,7 +29,6 @@ namespace AppStudio.Pages
             ViewModel = ViewModelFactory.NewDetail(new MySLO3Section());
             this.InitializeComponent();
 			commandBar.DataContext = ViewModel;
-            Microsoft.HockeyApp.HockeyClient.Current.TrackEvent(this.GetType().FullName);
             Microsoft.AppCenter.Analytics.Analytics.TrackEvent(this.GetType().FullName);
         }
 
